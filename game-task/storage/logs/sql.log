@@ -1,0 +1,426 @@
+
+2024/06/14 11:04:21 F:/go_work/src/game-task/queue/device.go:54 Error 1054 (42S22): Unknown column 'lastScene' in 'field list'
+[17.673ms] [rows:0] INSERT INTO `devices` (`agent`,`udid`,`gameId`,`type`,`lastScene`,`ver`,`created_at`,`updated_at`) VALUES ('150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46',1501,'0','127.0.0.1','2.0.3','2024-06-14 11:04:21.83','2024-06-14 11:04:21.83')
+
+2024/06/14 11:06:54 F:/go_work/src/game-task/queue/device.go:54 Error 1054 (42S22): Unknown column 'lastScene' in 'field list'
+[19.497ms] [rows:0] INSERT INTO `devices` (`agent`,`udid`,`gameId`,`type`,`lastScene`,`ver`,`created_at`,`updated_at`) VALUES ('150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46',1501,'0','127.0.0.1','2.0.3','2024-06-14 11:06:54.909','2024-06-14 11:06:54.909')
+
+2024/06/14 11:07:01 F:/go_work/src/game-task/queue/device.go:54 Error 1054 (42S22): Unknown column 'lastScene' in 'field list'
+[0.797ms] [rows:0] INSERT INTO `devices` (`agent`,`udid`,`gameId`,`type`,`lastScene`,`ver`,`created_at`,`updated_at`) VALUES ('150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46',1501,'0','127.0.0.1','2.0.3','2024-06-14 11:07:01.993','2024-06-14 11:07:01.993')
+
+2024/06/14 11:08:06 F:/go_work/src/game-task/queue/device.go:54 Error 1364 (HY000): Field 'city' doesn't have a default value
+[10.091ms] [rows:0] INSERT INTO `devices` (`agent`,`udid`,`gameId`,`type`,`ip`,`ver`,`created_at`,`updated_at`) VALUES ('150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46',1501,'0','127.0.0.1','2.0.3','2024-06-14 11:08:06.927','2024-06-14 11:08:06.927')
+
+2024/06/14 11:19:51 F:/go_work/src/game-task/queue/device.go:67 Error 1364 (HY000): Field 'city' doesn't have a default value
+[0.787ms] [rows:0] INSERT INTO `devices` (`agent`,`udid`,`gameId`,`type`,`ip`,`ver`,`created_at`,`updated_at`) VALUES ('150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46',1501,'0','14.145.14.133','2.0.3','2024-06-14 11:19:51.037','2024-06-14 11:19:51.037')
+
+2024/06/14 11:22:37 F:/go_work/src/game-task/queue/device.go:67 Error 1364 (HY000): Field 'city' doesn't have a default value
+[1.759ms] [rows:0] INSERT INTO `devices` (`agent`,`udid`,`gameId`,`type`,`ip`,`ver`,`created_at`,`updated_at`) VALUES ('150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46',1501,'0','14.145.14.133','2.0.3','2024-06-14 11:22:37.782','2024-06-14 11:22:37.782')
+
+2024/06/14 11:25:58 F:/go_work/src/game-task/queue/device.go:63
+[50.274ms] [rows:1] INSERT INTO `devices` (`agent`,`udid`,`gameId`,`type`,`ip`,`ver`,`province`,`city`,`created_at`,`updated_at`) VALUES ('150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46',1501,'0','14.145.14.133','2.0.3','广东','广州市','2024-06-14 11:25:58.735','2024-06-14 11:25:58.735')
+
+2024/06/14 11:34:22 F:/go_work/src/game-task/queue/device.go:64
+[81.038ms] [rows:1] INSERT INTO `devices` (`agent`,`udid`,`gameId`,`type`,`ip`,`ver`,`province`,`city`,`lastInit`,`created_at`,`updated_at`) VALUES ('150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46',1501,'0','14.145.14.133','2.0.3','广东','广州市',1718336062,'2024-06-14 11:34:22.473','2024-06-14 11:34:22.473')
+
+2024/06/14 11:42:52 F:/go_work/src/game-task/queue/device.go:68 Error 1054 (42S22): Unknown column 'game_id' in 'field list'
+[2.280ms] [rows:0] INSERT INTO `devices` (`game_id`,`agent`,`udid`,`type`,`ip`,`ver`,`province`,`city`,`lastInit`,`created_at`,`updated_at`) VALUES (1501,'150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46','0','14.145.14.133','2.0.3','广东','广州市',1718336572,'2024-06-14 11:42:52.484','2024-06-14 11:42:52.484') ON DUPLICATE KEY UPDATE `ip`=VALUES(`ip`),`ver`=VALUES(`ver`),`city`=VALUES(`city`),`province`=VALUES(`province`),`lastInit`=VALUES(`lastInit`)
+
+2024/06/14 11:44:17 F:/go_work/src/game-task/queue/device.go:68 SLOW SQL >= 200ms
+[232.817ms] [rows:2] INSERT INTO `devices` (`gameId`,`agent`,`udid`,`type`,`ip`,`ver`,`province`,`city`,`lastInit`,`created_at`,`updated_at`) VALUES (1501,'150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46','0','14.145.14.133','2.0.3','广东','广州市',1718336657,'2024-06-14 11:44:17.459','2024-06-14 11:44:17.459') ON DUPLICATE KEY UPDATE `ip`=VALUES(`ip`),`ver`=VALUES(`ver`),`city`=VALUES(`city`),`province`=VALUES(`province`),`lastInit`=VALUES(`lastInit`)
+
+2024/06/14 11:45:02 F:/go_work/src/game-task/queue/device.go:68
+[99.305ms] [rows:2] INSERT INTO `devices` (`gameId`,`agent`,`udid`,`type`,`ip`,`ver`,`province`,`city`,`lastInit`,`created_at`,`updated_at`) VALUES (1501,'150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46','0','14.145.14.133','2.0.4','广东','广州市',1718336702,'2024-06-14 11:45:02.872','2024-06-14 11:45:02.872') ON DUPLICATE KEY UPDATE `ip`=VALUES(`ip`),`ver`=VALUES(`ver`),`city`=VALUES(`city`),`province`=VALUES(`province`),`lastInit`=VALUES(`lastInit`)
+
+2024/06/14 11:49:17 F:/go_work/src/game-task/queue/device.go:68
+[64.043ms] [rows:2] INSERT INTO `devices` (`gameId`,`agent`,`udid`,`type`,`ip`,`ver`,`province`,`city`,`lastInit`,`created_at`,`updated_at`) VALUES (1501,'150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46','0','14.145.14.133','2.0.5','广东','广州市',1718336957,'2024-06-14 11:49:17.775','2024-06-14 11:49:17.775') ON DUPLICATE KEY UPDATE `ip`=VALUES(`ip`),`ver`=VALUES(`ver`),`city`=VALUES(`city`),`province`=VALUES(`province`),`lastInit`=VALUES(`lastInit`)
+
+2024/06/14 11:51:54 F:/go_work/src/game-task/queue/device.go:68
+[55.343ms] [rows:1] INSERT INTO `devices` (`gameId`,`agent`,`udid`,`type`,`ip`,`ver`,`province`,`city`,`lastInit`,`created_at`,`updated_at`) VALUES (1501,'150102_10086','z45cdf5adfew61324dadsg45648978awerxcv456','0','14.145.14.133','2.0.5','广东','广州市',1718337114,'2024-06-14 11:51:54.473','2024-06-14 11:51:54.473') ON DUPLICATE KEY UPDATE `ip`=VALUES(`ip`),`ver`=VALUES(`ver`),`city`=VALUES(`city`),`province`=VALUES(`province`),`lastInit`=VALUES(`lastInit`)
+
+2024/06/14 11:55:01 F:/go_work/src/game-task/queue/device.go:62 Error 1062 (23000): Duplicate entry '1501-150102_10086-z45cdf5adfew61324dadsg45648978awerxcv456' for key 'u_index'
+[37.246ms] [rows:0] INSERT INTO `devices` (`gameId`,`agent`,`udid`,`type`,`ip`,`ver`,`province`,`city`,`lastInit`,`created_at`,`updated_at`) VALUES (1501,'150102_10086','z45cdf5adfew61324dadsg45648978awerxcv456','0','14.145.14.133','2.0.5','','',0,'2024-06-14 11:55:01.419','2024-06-14 11:55:01.419')
+
+2024/06/14 11:55:42 F:/go_work/src/game-task/queue/device.go:62 Error 1062 (23000): Duplicate entry '1501-150102_10086-z45cdf5adfew61324dadsg45648978awerxcv456' for key 'u_index'
+[9.204ms] [rows:0] INSERT INTO `devices` (`gameId`,`agent`,`udid`,`type`,`ip`,`ver`,`province`,`city`,`lastInit`,`created_at`,`updated_at`) VALUES (1501,'150102_10086','z45cdf5adfew61324dadsg45648978awerxcv456','0','14.145.14.133','2.0.6','','',0,'2024-06-14 11:55:42.779','2024-06-14 11:55:42.779')
+
+2024/06/14 11:57:21 F:/go_work/src/game-task/queue/device.go:76
+[51.624ms] [rows:2] INSERT INTO `devices` (`gameId`,`agent`,`udid`,`type`,`ip`,`ver`,`province`,`city`,`lastInit`,`created_at`,`updated_at`) VALUES (1501,'150102_10086','z45cdf5adfew61324dadsg45648978awerxcv456','0','14.145.14.133','2.0.6','广东','广州市',1718337441,'2024-06-14 11:57:21.328','2024-06-14 11:57:21.328') ON DUPLICATE KEY UPDATE `ip`=VALUES(`ip`),`ver`=VALUES(`ver`),`city`=VALUES(`city`),`province`=VALUES(`province`),`lastInit`=VALUES(`lastInit`)
+
+2024/06/14 11:57:38 F:/go_work/src/game-task/queue/device.go:76
+[26.769ms] [rows:2] INSERT INTO `devices` (`gameId`,`agent`,`udid`,`type`,`ip`,`ver`,`province`,`city`,`lastInit`,`created_at`,`updated_at`) VALUES (1501,'150102_10086','z45cdf5adfew61324dadsg45648978awerxcv456','0','14.145.14.133','2.0.7','广东','广州市',1718337458,'2024-06-14 11:57:38.464','2024-06-14 11:57:38.464') ON DUPLICATE KEY UPDATE `ip`=VALUES(`ip`),`ver`=VALUES(`ver`),`city`=VALUES(`city`),`province`=VALUES(`province`),`lastInit`=VALUES(`lastInit`)
+
+2024/06/14 11:58:17 F:/go_work/src/game-task/queue/device.go:76
+[16.085ms] [rows:2] INSERT INTO `devices` (`gameId`,`agent`,`udid`,`type`,`ip`,`ver`,`province`,`city`,`lastInit`,`created_at`,`updated_at`) VALUES (1501,'150102_10086','z45cdf5adfew61324dadsg45648978awerxcv456','0','14.145.14.133','2.0.7','广东','广州市',1718337497,'2024-06-14 11:58:17.612','2024-06-14 11:58:17.612') ON DUPLICATE KEY UPDATE `ip`=VALUES(`ip`),`ver`=VALUES(`ver`),`city`=VALUES(`city`),`province`=VALUES(`province`),`lastInit`=VALUES(`lastInit`)
+
+2024/06/14 12:06:40 F:/go_work/src/game-task/queue/device.go:76
+[40.546ms] [rows:2] INSERT INTO `devices` (`gameId`,`agent`,`udid`,`type`,`ip`,`ver`,`province`,`city`,`lastInit`,`created_at`,`updated_at`) VALUES (1501,'150102_10086','z45cdf5adfew61324dadsg45648978awerxcv456','0','14.145.14.133','2.0.8','广东','广州市',1718338000,'2024-06-14 12:06:40.598','2024-06-14 12:06:40.598') ON DUPLICATE KEY UPDATE `ip`=VALUES(`ip`),`ver`=VALUES(`ver`),`city`=VALUES(`city`),`province`=VALUES(`province`),`lastInit`=VALUES(`lastInit`),`updated_at`=VALUES(`updated_at`)
+
+2024/06/14 12:16:29 F:/go_work/src/game-task/queue/device.go:77
+[26.553ms] [rows:2] INSERT INTO `devices` (`gameId`,`agent`,`udid`,`type`,`ip`,`ver`,`province`,`city`,`lastInit`,`created_at`,`updated_at`) VALUES (1501,'150102_10086','z45cdf5adfew61324dadsg45648978awerxcv456','0','14.145.14.133','2.0.8','广东','广州市',1718338589,'2024-06-14 12:16:29.743','2024-06-14 12:16:29.743') ON DUPLICATE KEY UPDATE `ip`=VALUES(`ip`),`ver`=VALUES(`ver`),`city`=VALUES(`city`),`province`=VALUES(`province`),`lastInit`=VALUES(`lastInit`),`updated_at`=VALUES(`updated_at`)
+
+2024/06/14 12:16:29 F:/go_work/src/game-task/queue/device.go:84 Error 1054 (42S22): Unknown column 'lastInit' in 'field list'
+[0.528ms] [rows:0] INSERT INTO `device_logins` (`gameId`,`agent`,`udid`,`type`,`ip`,`ver`,`province`,`city`,`lastInit`,`created_at`,`updated_at`) VALUES (0,'','','','','','','',0,'2024-06-14 12:16:29.769','2024-06-14 12:16:29.769')
+
+2024/06/14 12:18:36 F:/go_work/src/game-task/queue/device.go:77
+[40.728ms] [rows:2] INSERT INTO `devices` (`gameId`,`agent`,`udid`,`type`,`ip`,`ver`,`province`,`city`,`lastInit`,`created_at`,`updated_at`) VALUES (1501,'150102_10086','z45cdf5adfew61324dadsg45648978awerxcv456','0','14.145.14.133','2.0.8','广东','广州市',1718338716,'2024-06-14 12:18:36.433','2024-06-14 12:18:36.433') ON DUPLICATE KEY UPDATE `ip`=VALUES(`ip`),`ver`=VALUES(`ver`),`city`=VALUES(`city`),`province`=VALUES(`province`),`lastInit`=VALUES(`lastInit`),`updated_at`=VALUES(`updated_at`)
+
+2024/06/14 12:18:36 F:/go_work/src/game-task/queue/device.go:84 Error 1366 (HY000): Incorrect integer value: '' for column 'type' at row 1
+[27.750ms] [rows:0] INSERT INTO `device_logins` (`gameId`,`agent`,`udid`,`type`,`ip`,`ver`,`province`,`city`,`created_at`,`updated_at`) VALUES (0,'','','','','','','','2024-06-14 12:18:36.473','2024-06-14 12:18:36.473')
+
+2024/06/14 12:22:30 F:/go_work/src/game-task/queue/device.go:88
+[12.644ms] [rows:2] INSERT INTO `devices` (`gameId`,`agent`,`udid`,`type`,`ip`,`ver`,`province`,`city`,`lastInit`,`created_at`,`updated_at`) VALUES (1501,'150102_10086','z45cdf5adfew61324dadsg45648978awerxcv456','0','14.145.14.133','2.0.8','广东','广州市',1718338950,'2024-06-14 12:22:30.592','2024-06-14 12:22:30.592') ON DUPLICATE KEY UPDATE `ip`=VALUES(`ip`),`ver`=VALUES(`ver`),`city`=VALUES(`city`),`province`=VALUES(`province`),`lastInit`=VALUES(`lastInit`),`updated_at`=VALUES(`updated_at`)
+
+2024/06/14 12:22:30 F:/go_work/src/game-task/queue/device.go:95
+[1.403ms] [rows:1] INSERT INTO `device_logins` (`gameId`,`agent`,`udid`,`type`,`ip`,`ver`,`province`,`city`,`created_at`,`updated_at`) VALUES (1501,'150102_10086','z45cdf5adfew61324dadsg45648978awerxcv456','0','14.145.14.133','2.0.8','','','2024-06-14 12:22:30.604','2024-06-14 12:22:30.604')
+
+2024/06/14 12:23:19 F:/go_work/src/game-task/queue/device.go:88
+[23.692ms] [rows:2] INSERT INTO `devices` (`gameId`,`agent`,`udid`,`type`,`ip`,`ver`,`province`,`city`,`lastInit`,`created_at`,`updated_at`) VALUES (1501,'150102_10086','z45cdf5adfew61324dadsg45648978awerxcv456','0','14.145.14.133','2.0.8','广东','广州市',1718338999,'2024-06-14 12:23:19.396','2024-06-14 12:23:19.396') ON DUPLICATE KEY UPDATE `ip`=VALUES(`ip`),`ver`=VALUES(`ver`),`city`=VALUES(`city`),`province`=VALUES(`province`),`lastInit`=VALUES(`lastInit`),`updated_at`=VALUES(`updated_at`)
+
+2024/06/14 12:23:19 F:/go_work/src/game-task/queue/device.go:95
+[48.093ms] [rows:1] INSERT INTO `device_logins` (`gameId`,`agent`,`udid`,`type`,`ip`,`ver`,`province`,`city`,`created_at`,`updated_at`) VALUES (1501,'150102_10086','z45cdf5adfew61324dadsg45648978awerxcv456','0','14.145.14.133','2.0.8','广东','广州市','2024-06-14 12:23:19.418','2024-06-14 12:23:19.418')
+
+2024/06/14 15:40:49 F:/go_work/src/game-task/queue/device.go:88 record not found
+[16.201ms] [rows:0] SELECT * FROM `devices` WHERE gameId = 1501 AND agent = '150102_10086' AND udid = 'z45cdf5adfew61324dadsg45648978awerxcv456' ORDER BY `devices`.`id` LIMIT 1
+
+2024/06/14 15:40:49 F:/go_work/src/game-task/queue/device.go:95
+[30.520ms] [rows:1] INSERT INTO `devices` (`gameId`,`agent`,`udid`,`type`,`ip`,`ver`,`province`,`city`,`lastInit`,`created_at`,`updated_at`) VALUES (1501,'150102_10086','z45cdf5adfew61324dadsg45648978awerxcv456','0','14.145.14.133','2.0.0','广东','广州市',1718350849,'2024-06-14 15:40:49.351','2024-06-14 15:40:49.351')
+
+2024/06/14 15:40:49 F:/go_work/src/game-task/queue/device.go:102
+[1.232ms] [rows:1] INSERT INTO `device_logins` (`gameId`,`agent`,`udid`,`type`,`ip`,`ver`,`province`,`city`,`created_at`,`updated_at`) VALUES (1501,'150102_10086','z45cdf5adfew61324dadsg45648978awerxcv456','0','14.145.14.133','2.0.0','广东','广州市','2024-06-14 15:40:49.382','2024-06-14 15:40:49.382')
+
+2024/06/14 15:41:16 F:/go_work/src/game-task/queue/device.go:88
+[0.513ms] [rows:1] SELECT * FROM `devices` WHERE gameId = 1501 AND agent = '150102_10086' AND udid = 'z45cdf5adfew61324dadsg45648978awerxcv456' ORDER BY `devices`.`id` LIMIT 1
+
+2024/06/14 15:41:16 F:/go_work/src/game-task/queue/device.go:102
+[10.840ms] [rows:1] INSERT INTO `device_logins` (`gameId`,`agent`,`udid`,`type`,`ip`,`ver`,`province`,`city`,`created_at`,`updated_at`) VALUES (1501,'150102_10086','z45cdf5adfew61324dadsg45648978awerxcv456','0','14.145.14.100','2.0.1','广东','广州市','2024-06-14 15:41:16.435','2024-06-14 15:41:16.435')
+
+2024/06/14 15:51:55 F:/go_work/src/game-task/queue/user.go:73 record not found
+[51.052ms] [rows:0] SELECT * FROM `users` WHERE gameId = 1501 AND userCode = 'aaaaaaaaaa' ORDER BY `users`.`id` LIMIT 1
+
+2024/06/14 15:51:55 F:/go_work/src/game-task/queue/user.go:91 Error 1054 (42S22): Unknown column 'user_code' in 'field list'
+[0.000ms] [rows:0] INSERT INTO `users` (`user_code`,`user_name`,`gameId`,`game_name`,`agent`,`udid`,`type`,`ip`,`player_type`,`province`,`city`,`payUser`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','测试',1501,'','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46','0','14.145.14.133','','广东','广州市','','2024-06-14 15:51:55.468','2024-06-14 15:51:55.468')
+
+2024/06/14 15:53:49 F:/go_work/src/game-task/queue/user.go:73 record not found
+[1.962ms] [rows:0] SELECT * FROM `users` WHERE gameId = 1501 AND userCode = 'aaaaaaaaaa' ORDER BY `users`.`id` LIMIT 1
+
+2024/06/14 15:53:49 F:/go_work/src/game-task/queue/user.go:91 Error 1366 (HY000): Incorrect integer value: '' for column 'playerType' at row 1
+[0.659ms] [rows:0] INSERT INTO `users` (`userCode`,`userName`,`gameId`,`gameName`,`agent`,`udid`,`type`,`ip`,`playerType`,`province`,`city`,`payUser`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','测试',1501,'','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46','0','14.145.14.133','','广东','广州市','','2024-06-14 15:53:49.618','2024-06-14 15:53:49.618')
+
+2024/06/14 15:54:42 F:/go_work/src/game-task/queue/user.go:73 record not found
+[2.610ms] [rows:0] SELECT * FROM `users` WHERE gameId = 1501 AND userCode = 'aaaaaaaaaa' ORDER BY `users`.`id` LIMIT 1
+
+2024/06/14 15:54:42 F:/go_work/src/game-task/queue/user.go:91 Error 1366 (HY000): Incorrect integer value: '' for column 'playerType' at row 1
+[0.520ms] [rows:0] INSERT INTO `users` (`userCode`,`userName`,`gameId`,`gameName`,`agent`,`udid`,`type`,`ip`,`playerType`,`province`,`city`,`payUser`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','测试',1501,'','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46','0','14.145.14.133','','广东','广州市','','2024-06-14 15:54:42.244','2024-06-14 15:54:42.244')
+
+2024/06/14 15:55:12 F:/go_work/src/game-task/queue/user.go:73 record not found
+[1.543ms] [rows:0] SELECT * FROM `users` WHERE gameId = 1501 AND userCode = 'aaaaaaaaaa' ORDER BY `users`.`id` LIMIT 1
+
+2024/06/14 15:55:12 F:/go_work/src/game-task/queue/user.go:91 Error 1366 (HY000): Incorrect integer value: '' for column 'playerType' at row 1
+[0.546ms] [rows:0] INSERT INTO `users` (`userCode`,`userName`,`gameId`,`gameName`,`agent`,`udid`,`type`,`ip`,`playerType`,`province`,`city`,`payUser`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','测试',1501,'','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46','0','14.145.14.133','','广东','广州市','','2024-06-14 15:55:12.198','2024-06-14 15:55:12.198')
+
+2024/06/14 15:56:40 F:/go_work/src/game-task/queue/user.go:73 record not found
+[2.263ms] [rows:0] SELECT * FROM `users` WHERE gameId = 1501 AND userCode = 'aaaaaaaaaa' ORDER BY `users`.`id` LIMIT 1
+
+2024/06/14 15:56:40 F:/go_work/src/game-task/queue/user.go:91 Error 1366 (HY000): Incorrect integer value: '' for column 'payUser' at row 1
+[0.503ms] [rows:0] INSERT INTO `users` (`userCode`,`userName`,`gameId`,`gameName`,`agent`,`udid`,`type`,`ip`,`province`,`city`,`payUser`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','测试',1501,'','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46','0','14.145.14.133','广东','广州市','','2024-06-14 15:56:40.432','2024-06-14 15:56:40.432')
+
+2024/06/14 16:00:11 F:/go_work/src/game-task/queue/user.go:73 record not found
+[1.728ms] [rows:0] SELECT * FROM `users` WHERE gameId = 1501 AND userCode = 'aaaaaaaaaa' ORDER BY `users`.`id` LIMIT 1
+
+2024/06/14 16:00:11 F:/go_work/src/game-task/queue/user.go:91 Error 1366 (HY000): Incorrect integer value: '' for column 'payUser' at row 1
+[0.541ms] [rows:0] INSERT INTO `users` (`userCode`,`userName`,`gameId`,`gameName`,`agent`,`udid`,`type`,`ip`,`province`,`city`,`payUser`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','测试',1501,'','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46','0','14.145.14.133','广东','广州市','','2024-06-14 16:00:11.038','2024-06-14 16:00:11.038')
+
+2024/06/14 16:01:22 F:/go_work/src/game-task/queue/user.go:73 record not found
+[1.668ms] [rows:0] SELECT * FROM `users` WHERE gameId = 1501 AND userCode = 'aaaaaaaaaa' ORDER BY `users`.`id` LIMIT 1
+
+2024/06/14 16:01:23 F:/go_work/src/game-task/queue/user.go:91
+[75.780ms] [rows:1] INSERT INTO `users` (`userCode`,`userName`,`gameId`,`gameName`,`agent`,`udid`,`type`,`ip`,`province`,`city`,`payUser`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','测试',1501,'','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46','0','14.145.14.133','广东','广州市',0,'2024-06-14 16:01:22.947','2024-06-14 16:01:22.947')
+
+2024/06/14 16:01:23 F:/go_work/src/game-task/queue/user.go:115 Error 1054 (42S22): Unknown column 'user_code' in 'field list'
+[0.000ms] [rows:0] INSERT INTO `user_logins` (`user_code`,`user_name`,`gameId`,`game_name`,`time`,`regTime`,`agent`,`udid`,`type`,`ip`,`province`,`city`,`payUser`,`created_at`,`updated_at`) VALUES ('','',1501,'',1718352082,1718352082,'150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46','0','14.145.14.133','广东','广州市',0,'2024-06-14 16:01:23.023','2024-06-14 16:01:23.023')
+
+2024/06/14 16:02:11 F:/go_work/src/game-task/queue/user.go:73 record not found
+[18.059ms] [rows:0] SELECT * FROM `users` WHERE gameId = 1501 AND userCode = 'aaaaaaaaaa' ORDER BY `users`.`id` LIMIT 1
+
+2024/06/14 16:02:11 F:/go_work/src/game-task/queue/user.go:91
+[32.513ms] [rows:1] INSERT INTO `users` (`userCode`,`userName`,`gameId`,`gameName`,`agent`,`udid`,`type`,`ip`,`province`,`city`,`payUser`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','测试',1501,'','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46','0','14.145.14.133','广东','广州市',0,'2024-06-14 16:02:11.267','2024-06-14 16:02:11.267')
+
+2024/06/14 16:02:11 F:/go_work/src/game-task/queue/user.go:115 Error 1054 (42S22): Unknown column 'userName' in 'field list'
+[0.504ms] [rows:0] INSERT INTO `user_logins` (`userCode`,`userName`,`gameId`,`gameName`,`time`,`regTime`,`agent`,`udid`,`type`,`ip`,`province`,`city`,`payUser`,`created_at`,`updated_at`) VALUES ('','',1501,'',1718352131,1718352131,'150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46','0','14.145.14.133','广东','广州市',0,'2024-06-14 16:02:11.3','2024-06-14 16:02:11.3')
+
+2024/06/14 16:02:53 F:/go_work/src/game-task/queue/user.go:73 record not found
+[2.233ms] [rows:0] SELECT * FROM `users` WHERE gameId = 1501 AND userCode = 'aaaaaaaaaa' ORDER BY `users`.`id` LIMIT 1
+
+2024/06/14 16:02:53 F:/go_work/src/game-task/queue/user.go:91
+[8.623ms] [rows:1] INSERT INTO `users` (`userCode`,`userName`,`gameId`,`gameName`,`agent`,`udid`,`type`,`ip`,`province`,`city`,`payUser`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','测试',1501,'','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46','0','14.145.14.133','广东','广州市',0,'2024-06-14 16:02:53.167','2024-06-14 16:02:53.167')
+
+2024/06/14 16:02:53 F:/go_work/src/game-task/queue/user.go:115 Error 1054 (42S22): Unknown column 'gameName' in 'field list'
+[0.503ms] [rows:0] INSERT INTO `user_logins` (`userCode`,`gameId`,`gameName`,`time`,`regTime`,`agent`,`udid`,`type`,`ip`,`province`,`city`,`payUser`,`created_at`,`updated_at`) VALUES ('',1501,'',1718352173,1718352173,'150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46','0','14.145.14.133','广东','广州市',0,'2024-06-14 16:02:53.175','2024-06-14 16:02:53.175')
+
+2024/06/14 16:03:19 F:/go_work/src/game-task/queue/user.go:73 record not found
+[1.271ms] [rows:0] SELECT * FROM `users` WHERE gameId = 1501 AND userCode = 'aaaaaaaaaa' ORDER BY `users`.`id` LIMIT 1
+
+2024/06/14 16:03:19 F:/go_work/src/game-task/queue/user.go:91
+[5.808ms] [rows:1] INSERT INTO `users` (`userCode`,`userName`,`gameId`,`gameName`,`agent`,`udid`,`type`,`ip`,`province`,`city`,`payUser`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','测试',1501,'','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46','0','14.145.14.133','广东','广州市',0,'2024-06-14 16:03:19.71','2024-06-14 16:03:19.71')
+
+2024/06/14 16:03:19 F:/go_work/src/game-task/queue/user.go:115
+[183.080ms] [rows:1] INSERT INTO `user_logins` (`userCode`,`gameId`,`time`,`regTime`,`agent`,`udid`,`type`,`ip`,`province`,`city`,`payUser`,`created_at`,`updated_at`) VALUES ('',1501,1718352199,1718352199,'150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46','0','14.145.14.133','广东','广州市',0,'2024-06-14 16:03:19.716','2024-06-14 16:03:19.716')
+
+2024/06/14 16:04:51 F:/go_work/src/game-task/queue/user.go:73
+[45.325ms] [rows:1] SELECT * FROM `users` WHERE gameId = 1501 AND userCode = 'aaaaaaaaaa' ORDER BY `users`.`id` LIMIT 1
+
+2024/06/14 16:04:51 F:/go_work/src/game-task/queue/user.go:116
+[9.034ms] [rows:1] INSERT INTO `user_logins` (`userCode`,`gameId`,`time`,`regTime`,`agent`,`udid`,`type`,`ip`,`province`,`city`,`payUser`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa',1501,1718352291,1718352200,'150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46','0','14.145.14.133','广东','广州市',0,'2024-06-14 16:04:51.832','2024-06-14 16:04:51.832')
+
+2024/06/14 16:05:27 F:/go_work/src/game-task/queue/user.go:73
+[0.979ms] [rows:1] SELECT * FROM `users` WHERE gameId = 1501 AND userCode = 'aaaaaaaaaa' ORDER BY `users`.`id` LIMIT 1
+
+2024/06/14 16:05:27 F:/go_work/src/game-task/queue/user.go:116
+[15.466ms] [rows:1] INSERT INTO `user_logins` (`userCode`,`gameId`,`time`,`regTime`,`agent`,`udid`,`type`,`ip`,`province`,`city`,`payUser`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa',1501,1718352327,1718352200,'150102_10086','z45cdf5adfew61324dadsg45648978adsf4566666','0','14.145.14.100','广东','广州市',0,'2024-06-14 16:05:27.115','2024-06-14 16:05:27.115')
+
+2024/06/14 16:30:57 F:/go_work/src/game-task/queue/role.go:56
+[3.023ms] [rows:1] SELECT * FROM `roles` WHERE gameId = 1501 AND roleId = '10012001445466' ORDER BY `roles`.`id` LIMIT 1
+
+2024/06/14 16:30:57 F:/go_work/src/game-task/queue/role.go:107 Error 1054 (42S22): Unknown column 'currency' in 'field list'
+[1.732ms] [rows:0] INSERT INTO `role_logins` (`userCode`,`agent`,`udid`,`gameId`,`roleId`,`roleName`,`serverId`,`loginServerId`,`serverName`,`type`,`currency`,`time`,`logoutTime`,`roleLevel`,`ip`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46',1501,'10012001445466','我的是大师傅','1002','1002','2服','0',1200,0,0,55,'','2024-06-14 16:30:57.398','2024-06-14 16:30:57.398')
+
+2024/06/14 16:32:20 F:/go_work/src/game-task/queue/role.go:56 record not found
+[2.360ms] [rows:0] SELECT * FROM `roles` WHERE gameId = 1501 AND roleId = '10012001445466' ORDER BY `roles`.`id` LIMIT 1
+
+2024/06/14 16:32:20 F:/go_work/src/game-task/queue/role.go:92 Error 1054 (42S22): Unknown column 'tags' in 'field list'
+[1.117ms] [rows:0] INSERT INTO `roles` (`userCode`,`agent`,`udid`,`gameId`,`roleId`,`roleName`,`serverId`,`serverName`,`type`,`level`,`currency`,`vip`,`balance`,`power`,`lastScene`,`online`,`tags`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46',1501,'10012001445466','我的是大师傅','1002','2服','0',55,1200,10,23000,99999,'GAME',0,'','2024-06-14 16:32:20.91','2024-06-14 16:32:20.91')
+
+2024/06/14 16:35:10 F:/go_work/src/game-task/queue/role.go:62 record not found
+[1.788ms] [rows:0] SELECT * FROM `roles` WHERE gameId = 1501 AND roleId = '10012001445466' ORDER BY `roles`.`id` LIMIT 1
+
+2024/06/14 16:35:10 F:/go_work/src/game-task/queue/role.go:98 Error 1054 (42S22): Unknown column 'tags' in 'field list'
+[0.000ms] [rows:0] INSERT INTO `roles` (`userCode`,`agent`,`udid`,`gameId`,`roleId`,`roleName`,`serverId`,`serverName`,`type`,`level`,`currency`,`vip`,`balance`,`power`,`lastScene`,`online`,`tags`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46',1501,'10012001445466','我的是大师傅','1002','2服','0',55,1200,10,23000,99999,'GAME',0,'','2024-06-14 16:35:10.848','2024-06-14 16:35:10.848')
+
+2024/06/14 16:35:43 F:/go_work/src/game-task/queue/role.go:62 record not found
+[1.849ms] [rows:0] SELECT * FROM `roles` WHERE gameId = 1501 AND roleId = '10012001445466' ORDER BY `roles`.`id` LIMIT 1
+
+2024/06/14 16:35:43 F:/go_work/src/game-task/queue/role.go:98
+[19.494ms] [rows:1] INSERT INTO `roles` (`userCode`,`agent`,`udid`,`gameId`,`roleId`,`roleName`,`serverId`,`serverName`,`type`,`level`,`currency`,`vip`,`balance`,`power`,`lastScene`,`online`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46',1501,'10012001445466','我的是大师傅','1002','2服','0',55,1200,10,23000,99999,'GAME',0,'2024-06-14 16:35:43.63','2024-06-14 16:35:43.63')
+
+2024/06/14 16:35:43 F:/go_work/src/game-task/queue/role.go:101
+[1.536ms] [rows:1] INSERT INTO `role_logins` (`userCode`,`agent`,`udid`,`gameId`,`roleId`,`roleName`,`serverId`,`loginServerId`,`serverName`,`type`,`time`,`logoutTime`,`roleLevel`,`ip`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46',1501,'10012001445466','我的是大师傅','1002','1002','2服','0',0,0,55,'','2024-06-14 16:35:43.65','2024-06-14 16:35:43.65')
+
+2024/06/14 16:37:26 F:/go_work/src/game-task/queue/role.go:62
+[1.677ms] [rows:1] SELECT * FROM `roles` WHERE gameId = 1501 AND roleId = '10012001445466' ORDER BY `roles`.`id` LIMIT 1
+
+2024/06/14 16:37:26 F:/go_work/src/game-task/queue/role.go:112
+[81.091ms] [rows:1] INSERT INTO `role_logins` (`userCode`,`agent`,`udid`,`gameId`,`roleId`,`roleName`,`serverId`,`loginServerId`,`serverName`,`type`,`time`,`logoutTime`,`roleLevel`,`ip`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46',1501,'10012001445466','我的是大师傅','1002','1002','2服','0',0,0,55,'','2024-06-14 16:37:26.606','2024-06-14 16:37:26.606')
+
+2024/06/14 16:44:47 F:/go_work/src/game-task/queue/role.go:62 record not found
+[2.929ms] [rows:0] SELECT * FROM `roles` WHERE gameId = 1501 AND roleId = '10012001445466' ORDER BY `roles`.`id` LIMIT 1
+
+2024/06/14 16:44:47 F:/go_work/src/game-task/queue/role.go:106
+[10.946ms] [rows:1] INSERT INTO `roles` (`userCode`,`agent`,`udid`,`gameId`,`roleId`,`roleName`,`serverId`,`serverName`,`type`,`level`,`currency`,`vip`,`balance`,`power`,`lastScene`,`online`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46',1501,'10012001445466','我的是大师傅','1002','2服','0',55,1200,10,23000,99999,'GAME',0,'2024-06-14 16:44:47.805','2024-06-14 16:44:47.805')
+
+2024/06/14 16:44:47 F:/go_work/src/game-task/queue/role.go:109
+[3.878ms] [rows:1] INSERT INTO `role_logins` (`userCode`,`agent`,`udid`,`gameId`,`roleId`,`roleName`,`serverId`,`loginServerId`,`serverName`,`type`,`time`,`regTime`,`logoutTime`,`roleLevel`,`ip`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46',1501,'10012001445466','我的是大师傅','1002','1002','2服','0',0,0,0,55,'','2024-06-14 16:44:47.816','2024-06-14 16:44:47.816')
+
+2024/06/14 16:46:26 F:/go_work/src/game-task/queue/role.go:62
+[7.248ms] [rows:1] SELECT * FROM `roles` WHERE gameId = 1501 AND roleId = '10012001445466' ORDER BY `roles`.`id` LIMIT 1
+
+2024/06/14 16:46:26 F:/go_work/src/game-task/queue/role.go:121
+[40.166ms] [rows:1] UPDATE `roles` SET `online`=0,`updated_at`='2024-06-14 16:46:26.937' WHERE `id` = 1
+
+2024/06/14 16:46:26 F:/go_work/src/game-task/queue/role.go:124
+[15.750ms] [rows:1] INSERT INTO `role_logins` (`userCode`,`agent`,`udid`,`gameId`,`roleId`,`roleName`,`serverId`,`loginServerId`,`serverName`,`type`,`time`,`regTime`,`logoutTime`,`roleLevel`,`ip`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46',1501,'10012001445466','我的是大师傅','1002','1002','2服','0',0,0,0,55,'','2024-06-14 16:46:26.977','2024-06-14 16:46:26.977')
+
+2024/06/14 16:50:08 F:/go_work/src/game-task/queue/role.go:62 invalid connection
+[4.180ms] [rows:0] SELECT * FROM `roles` WHERE gameId = 1501 AND roleId = '10012001445466' ORDER BY `roles`.`id` LIMIT 1
+
+2024/06/14 16:54:19 F:/go_work/src/game-task/queue/role.go:68 record not found
+[2.551ms] [rows:0] SELECT * FROM `roles` WHERE gameId = 1501 AND roleId = '10012001445466' ORDER BY `roles`.`id` LIMIT 1
+
+2024/06/14 16:54:20 F:/go_work/src/game-task/queue/role.go:112
+[20.878ms] [rows:1] INSERT INTO `roles` (`userCode`,`agent`,`udid`,`gameId`,`roleId`,`roleName`,`serverId`,`serverName`,`type`,`level`,`currency`,`vip`,`balance`,`power`,`lastScene`,`online`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46',1501,'10012001445466','我的是大师傅','1002','2服','0',55,1200,10,23000,99999,'GAME',1,'2024-06-14 16:54:19.986','2024-06-14 16:54:19.986')
+
+2024/06/14 16:54:20 F:/go_work/src/game-task/queue/role.go:115
+[1.503ms] [rows:1] INSERT INTO `role_logins` (`userCode`,`agent`,`udid`,`gameId`,`roleId`,`roleName`,`serverId`,`loginServerId`,`serverName`,`type`,`time`,`regTime`,`logoutTime`,`roleLevel`,`ip`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46',1501,'10012001445466','我的是大师傅','1002','1002','2服','0',1718355259,1718355259,0,55,'','2024-06-14 16:54:20.007','2024-06-14 16:54:20.007')
+
+2024/06/14 16:54:38 F:/go_work/src/game-task/queue/role.go:68
+[1.066ms] [rows:1] SELECT * FROM `roles` WHERE gameId = 1501 AND roleId = '10012001445466' ORDER BY `roles`.`id` LIMIT 1
+
+2024/06/14 16:54:38 F:/go_work/src/game-task/queue/role.go:112
+[17.002ms] [rows:1] INSERT INTO `roles` (`userCode`,`agent`,`udid`,`gameId`,`roleId`,`roleName`,`serverId`,`serverName`,`type`,`level`,`currency`,`vip`,`balance`,`power`,`lastScene`,`online`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46',1501,'10012001445466','我的是大师傅','1002','2服','0',55,1200,10,23000,99999,'GAME',1,'2024-06-14 16:54:38.19','2024-06-14 16:54:38.19')
+
+2024/06/14 16:54:38 F:/go_work/src/game-task/queue/role.go:115
+[0.000ms] [rows:1] INSERT INTO `role_logins` (`userCode`,`agent`,`udid`,`gameId`,`roleId`,`roleName`,`serverId`,`loginServerId`,`serverName`,`type`,`time`,`regTime`,`logoutTime`,`roleLevel`,`ip`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46',1501,'10012001445466','我的是大师傅','1002','1002','2服','0',1718355278,1718355278,0,55,'','2024-06-14 16:54:38.207','2024-06-14 16:54:38.207')
+
+2024/06/14 17:03:01 F:/go_work/src/game-task/queue/role.go:90
+[14.410ms] [rows:1] INSERT INTO `role_logins` (`userCode`,`agent`,`udid`,`gameId`,`roleId`,`roleName`,`serverId`,`loginServerId`,`serverName`,`type`,`time`,`regTime`,`logoutTime`,`roleLevel`,`ip`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46',1501,'10012001445466','我的是大师傅','1002','1002','2服','0',1718355781,1718355781,0,55,'','2024-06-14 17:03:01.602','2024-06-14 17:03:01.602')
+
+2024/06/14 17:05:49 F:/go_work/src/game-task/queue/role.go:72 record not found
+[1.353ms] [rows:0] SELECT * FROM `roles` WHERE gameId = 1501 AND roleId = '10012001445466' ORDER BY `roles`.`id` LIMIT 1
+
+2024/06/14 17:05:49 F:/go_work/src/game-task/queue/role.go:79
+[0.571ms] [rows:1] INSERT INTO `roles` (`userCode`,`agent`,`udid`,`gameId`,`roleId`,`roleName`,`serverId`,`serverName`,`type`,`level`,`currency`,`vip`,`balance`,`power`,`lastScene`,`online`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46',1501,'10012001445466','我的是大师傅','1002','2服','0',55,1200,10,23000,99999,'GAME',0,'2024-06-14 17:05:49.515','2024-06-14 17:05:49.515')
+
+2024/06/14 17:05:49 F:/go_work/src/game-task/queue/role.go:110
+[1.150ms] [rows:1] INSERT INTO `role_logins` (`userCode`,`agent`,`udid`,`gameId`,`roleId`,`roleName`,`serverId`,`loginServerId`,`serverName`,`type`,`time`,`regTime`,`logoutTime`,`roleLevel`,`ip`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46',1501,'10012001445466','我的是大师傅','1002','1002','2服','0',1718355949,1718355949,0,55,'','2024-06-14 17:05:49.516','2024-06-14 17:05:49.516')
+
+2024/06/14 17:06:17 F:/go_work/src/game-task/queue/role.go:72
+[1.165ms] [rows:1] SELECT * FROM `roles` WHERE gameId = 1501 AND roleId = '10012001445466' ORDER BY `roles`.`id` LIMIT 1
+
+2024/06/14 17:06:17 F:/go_work/src/game-task/queue/role.go:86
+[0.580ms] [rows:1] UPDATE `roles` SET `online`=1,`updated_at`='2024-06-14 17:06:17.758' WHERE `id` = 1
+
+2024/06/14 17:06:17 F:/go_work/src/game-task/queue/role.go:110
+[0.000ms] [rows:1] INSERT INTO `role_logins` (`userCode`,`agent`,`udid`,`gameId`,`roleId`,`roleName`,`serverId`,`loginServerId`,`serverName`,`type`,`time`,`regTime`,`logoutTime`,`roleLevel`,`ip`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46',1501,'10012001445466','我的是大师傅','1002','1002','2服','0',1718355977,1718355977,0,55,'','2024-06-14 17:06:17.759','2024-06-14 17:06:17.759')
+
+2024/06/14 17:11:03 F:/go_work/src/game-task/queue/role.go:72 record not found
+[1.997ms] [rows:0] SELECT * FROM `roles` WHERE gameId = 1501 AND roleId = '10012001445466' ORDER BY `roles`.`id` LIMIT 1
+
+2024/06/14 17:11:03 F:/go_work/src/game-task/queue/role.go:81
+[4.778ms] [rows:1] INSERT INTO `roles` (`userCode`,`agent`,`udid`,`gameId`,`roleId`,`roleName`,`serverId`,`serverName`,`type`,`level`,`currency`,`vip`,`balance`,`power`,`lastScene`,`online`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46',1501,'10012001445466','我的是大师傅','1002','2服','0',55,1200,10,23000,99999,'GAME',1,'2024-06-14 17:11:03.031','2024-06-14 17:11:03.031')
+
+2024/06/14 17:11:03 F:/go_work/src/game-task/queue/role.go:116 Error 1264 (22003): Out of range value for column 'regTime' at row 1
+[2.061ms] [rows:0] INSERT INTO `role_logins` (`userCode`,`agent`,`udid`,`gameId`,`roleId`,`roleName`,`serverId`,`loginServerId`,`serverName`,`type`,`time`,`regTime`,`logoutTime`,`roleLevel`,`ip`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46',1501,'10012001445466','我的是大师傅','1002','1002','2服','0',1718356263,-62135596800,0,55,'','2024-06-14 17:11:03.037','2024-06-14 17:11:03.037')
+
+2024/06/14 17:14:21 F:/go_work/src/game-task/queue/role.go:73 record not found
+[1.524ms] [rows:0] SELECT * FROM `roles` WHERE gameId = 1501 AND roleId = '10012001445466' ORDER BY `roles`.`id` LIMIT 1
+
+2024/06/14 17:14:21 F:/go_work/src/game-task/queue/role.go:82
+[17.997ms] [rows:1] INSERT INTO `roles` (`userCode`,`agent`,`udid`,`gameId`,`roleId`,`roleName`,`serverId`,`serverName`,`type`,`level`,`currency`,`vip`,`balance`,`power`,`lastScene`,`online`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46',1501,'10012001445466','我的是大师傅','1002','2服','0',55,1200,10,23000,99999,'GAME',1,'2024-06-14 17:14:21.509','2024-06-14 17:14:21.509')
+
+2024/06/14 17:14:21 F:/go_work/src/game-task/queue/role.go:118 Error 1264 (22003): Out of range value for column 'regTime' at row 1
+[94.795ms] [rows:0] INSERT INTO `role_logins` (`userCode`,`agent`,`udid`,`gameId`,`roleId`,`roleName`,`serverId`,`loginServerId`,`serverName`,`type`,`time`,`regTime`,`logoutTime`,`roleLevel`,`ip`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46',1501,'10012001445466','我的是大师傅','1002','1002','2服','0',1718356461,-62135596800,0,55,'','2024-06-14 17:14:21.529','2024-06-14 17:14:21.529')
+
+2024/06/14 17:15:04 F:/go_work/src/game-task/queue/role.go:73 record not found
+[0.603ms] [rows:0] SELECT * FROM `roles` WHERE gameId = 1501 AND roleId = '10012001445466' ORDER BY `roles`.`id` LIMIT 1
+
+2024/06/14 17:15:04 F:/go_work/src/game-task/queue/role.go:82
+[1.064ms] [rows:1] INSERT INTO `roles` (`userCode`,`agent`,`udid`,`gameId`,`roleId`,`roleName`,`serverId`,`serverName`,`type`,`level`,`currency`,`vip`,`balance`,`power`,`lastScene`,`online`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46',1501,'10012001445466','我的是大师傅','1002','2服','0',55,1200,10,23000,99999,'GAME',1,'2024-06-14 17:15:04.057','2024-06-14 17:15:04.057')
+
+2024/06/14 17:15:04 F:/go_work/src/game-task/queue/role.go:120 Error 1264 (22003): Out of range value for column 'regTime' at row 1
+[0.041ms] [rows:0] INSERT INTO `role_logins` (`userCode`,`agent`,`udid`,`gameId`,`roleId`,`roleName`,`serverId`,`loginServerId`,`serverName`,`type`,`time`,`regTime`,`logoutTime`,`roleLevel`,`ip`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46',1501,'10012001445466','我的是大师傅','1002','1002','2服','0',1718356504,-62135596800,0,55,'','2024-06-14 17:15:04.058','2024-06-14 17:15:04.058')
+
+2024/06/14 17:26:17 F:/go_work/src/game-task/queue/role.go:73 record not found
+[2.079ms] [rows:0] SELECT * FROM `roles` WHERE gameId = 1501 AND roleId = '10012001445466' ORDER BY `roles`.`id` LIMIT 1
+
+2024/06/14 17:26:17 F:/go_work/src/game-task/queue/role.go:82
+[17.179ms] [rows:1] INSERT INTO `roles` (`userCode`,`agent`,`udid`,`gameId`,`roleId`,`roleName`,`serverId`,`serverName`,`type`,`level`,`currency`,`vip`,`balance`,`power`,`lastScene`,`online`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46',1501,'10012001445466','我的是大师傅','1002','2服','0',55,1200,10,23000,99999,'GAME',1,'2024-06-14 17:26:17.436','2024-06-14 17:26:17.436')
+
+2024/06/14 17:26:17 F:/go_work/src/game-task/queue/role.go:113
+[44.560ms] [rows:1] INSERT INTO `role_logins` (`userCode`,`agent`,`udid`,`gameId`,`roleId`,`roleName`,`serverId`,`loginServerId`,`serverName`,`type`,`time`,`regTime`,`logoutTime`,`roleLevel`,`ip`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46',1501,'10012001445466','我的是大师傅','1002','1002','2服','0',1718357177,1718357177,0,55,'','2024-06-14 17:26:17.454','2024-06-14 17:26:17.454')
+
+2024/06/14 17:26:30 F:/go_work/src/game-task/queue/role.go:73
+[0.908ms] [rows:1] SELECT * FROM `roles` WHERE gameId = 1501 AND roleId = '10012001445466' ORDER BY `roles`.`id` LIMIT 1
+
+2024/06/14 17:26:30 F:/go_work/src/game-task/queue/role.go:88
+[0.557ms] [rows:1] UPDATE `roles` SET `online`=1,`updated_at`='2024-06-14 17:26:30.614' WHERE `id` = 4
+
+2024/06/14 17:26:30 F:/go_work/src/game-task/queue/role.go:113
+[0.565ms] [rows:1] INSERT INTO `role_logins` (`userCode`,`agent`,`udid`,`gameId`,`roleId`,`roleName`,`serverId`,`loginServerId`,`serverName`,`type`,`time`,`regTime`,`logoutTime`,`roleLevel`,`ip`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46',1501,'10012001445466','我的是大师傅','1002','1002','2服','0',1718357190,1718357177,0,55,'','2024-06-14 17:26:30.615','2024-06-14 17:26:30.615')
+
+2024/06/14 17:27:05 F:/go_work/src/game-task/queue/role.go:121
+[0.774ms] [rows:1] SELECT * FROM `role_logins` WHERE gameId = 1501 AND roleId = '10012001445466' ORDER BY id desc,`role_logins`.`id` LIMIT 1
+
+2024/06/14 17:27:05 F:/go_work/src/game-task/queue/role.go:132
+[0.551ms] [rows:1] UPDATE `role_logins` SET `userCode`='aaaaaaaaaa',`agent`='150102_10086',`udid`='z45cdf5adfew61324dadsg45648978adsf4564ads46',`gameId`=1501,`roleId`='10012001445466',`roleName`='我的是大师傅',`serverId`='1002',`loginServerId`='1002',`serverName`='2服',`type`='0',`time`=1718357190,`regTime`=1718357177,`logoutTime`=1718357225,`roleLevel`=55,`ip`='',`created_at`='2024-06-14 17:26:31',`updated_at`='2024-06-14 17:27:05.865' WHERE `id` = 2
+
+2024/06/14 17:27:05 F:/go_work/src/game-task/queue/role.go:139
+[0.000ms] [rows:1] SELECT * FROM `roles` WHERE gameId = 1501 AND roleId = '10012001445466' ORDER BY `roles`.`id` LIMIT 1
+
+2024/06/14 17:27:05 F:/go_work/src/game-task/queue/role.go:145
+[18.299ms] [rows:1] UPDATE `roles` SET `online`=0,`updated_at`='2024-06-14 17:27:05.866' WHERE `id` = 4
+
+2024/06/14 17:27:25 F:/go_work/src/game-task/queue/role.go:121
+[0.533ms] [rows:1] SELECT * FROM `role_logins` WHERE gameId = 1501 AND roleId = '10012001445466' ORDER BY id desc,`role_logins`.`id` LIMIT 1
+
+2024/06/14 17:27:25 F:/go_work/src/game-task/queue/role.go:132
+[0.000ms] [rows:1] UPDATE `role_logins` SET `userCode`='aaaaaaaaaa',`agent`='150102_10086',`udid`='z45cdf5adfew61324dadsg45648978adsf4564ads46',`gameId`=1501,`roleId`='10012001445466',`roleName`='我的是大师傅1',`serverId`='1002',`loginServerId`='1002',`serverName`='2服',`type`='0',`time`=1718357190,`regTime`=1718357177,`logoutTime`=1718357245,`roleLevel`=55,`ip`='',`created_at`='2024-06-14 17:26:31',`updated_at`='2024-06-14 17:27:25.027' WHERE `id` = 2
+
+2024/06/14 17:27:25 F:/go_work/src/game-task/queue/role.go:139
+[0.529ms] [rows:1] SELECT * FROM `roles` WHERE gameId = 1501 AND roleId = '10012001445466' ORDER BY `roles`.`id` LIMIT 1
+
+2024/06/14 17:27:25 F:/go_work/src/game-task/queue/role.go:145
+[0.000ms] [rows:1] UPDATE `roles` SET `online`=0,`updated_at`='2024-06-14 17:27:25.028' WHERE `id` = 4
+
+2024/06/17 10:17:52 F:/go_work/src/game-task/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+
+2024/06/17 10:24:20 F:/go_work/src/game-task/queue/role.go:133 record not found
+[100.990ms] [rows:0] SELECT * FROM `role_logins` WHERE gameId = 1501 AND roleId = '10012001445477' ORDER BY id desc,`role_logins`.`id` LIMIT 1
+
+2024/06/17 10:24:21 F:/go_work/src/game-task/queue/role.go:151 record not found
+[78.901ms] [rows:0] SELECT * FROM `roles` WHERE gameId = 1501 AND roleId = '10012001445477' ORDER BY `roles`.`id` LIMIT 1
+
+2024/06/17 10:26:12 F:/go_work/src/game-task/queue/role.go:133 record not found
+[0.000ms] [rows:0] SELECT * FROM `role_logins` WHERE gameId = 1501 AND roleId = '10012001445477' ORDER BY id desc,`role_logins`.`id` LIMIT 1
+
+2024/06/17 10:26:12 F:/go_work/src/game-task/queue/role.go:151 record not found
+[0.000ms] [rows:0] SELECT * FROM `roles` WHERE gameId = 1501 AND roleId = '10012001445477' ORDER BY `roles`.`id` LIMIT 1
+
+2024/06/17 10:28:19 F:/go_work/src/game-task/queue/role.go:73 record not found
+[9.603ms] [rows:0] SELECT * FROM `roles` WHERE gameId = 1501 AND serverId = '1002' AND roleId = '10012001445477' ORDER BY `roles`.`id` LIMIT 1
+
+2024/06/17 10:28:19 F:/go_work/src/game-task/queue/role.go:82
+[1.492ms] [rows:1] INSERT INTO `roles` (`userCode`,`agent`,`udid`,`gameId`,`roleId`,`roleName`,`serverId`,`serverName`,`type`,`level`,`currency`,`vip`,`balance`,`power`,`lastScene`,`online`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46',1501,'10012001445477','我的是大师傅1','1002','2服','0',55,1200,10,23000,99999,'GAME',1,'2024-06-17 10:28:19.074','2024-06-17 10:28:19.074')
+
+2024/06/17 10:28:19 F:/go_work/src/game-task/queue/role.go:96 Error 1054 (42S22): Unknown column 'createdAt' in 'where clause'
+[0.000ms] [rows:0] SELECT * FROM `roles` WHERE gameId = 1501 AND userCode = 'aaaaaaaaaa' AND createdAt < '0000-00-00 00:00:00' ORDER BY `roles`.`id` LIMIT 1
+
+2024/06/17 10:28:56 F:/go_work/src/game-task/queue/role.go:73 record not found
+[2.625ms] [rows:0] SELECT * FROM `roles` WHERE gameId = 1501 AND serverId = '1002' AND roleId = '10012001445477' ORDER BY `roles`.`id` LIMIT 1
+
+2024/06/17 10:28:56 F:/go_work/src/game-task/queue/role.go:82
+[0.708ms] [rows:1] INSERT INTO `roles` (`userCode`,`agent`,`udid`,`gameId`,`roleId`,`roleName`,`serverId`,`serverName`,`type`,`level`,`currency`,`vip`,`balance`,`power`,`lastScene`,`online`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46',1501,'10012001445477','我的是大师傅1','1002','2服','0',55,1200,10,23000,99999,'GAME',1,'2024-06-17 10:28:56.678','2024-06-17 10:28:56.678')
+
+2024/06/17 10:28:56 F:/go_work/src/game-task/queue/role.go:96 record not found
+[0.211ms] [rows:0] SELECT * FROM `roles` WHERE gameId = 1501 AND userCode = 'aaaaaaaaaa' AND created_at < '0000-00-00 00:00:00' ORDER BY `roles`.`id` LIMIT 1
+
+2024/06/17 10:28:56 F:/go_work/src/game-task/queue/role.go:125
+[91.882ms] [rows:1] INSERT INTO `role_logins` (`userCode`,`agent`,`udid`,`gameId`,`roleId`,`roleName`,`serverId`,`loginServerId`,`serverName`,`type`,`time`,`regTime`,`logoutTime`,`roleLevel`,`ip`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46',1501,'10012001445477','我的是大师傅1','1002','1002','2服','0',1718591336,1718591336,0,55,'','2024-06-17 10:28:56.68','2024-06-17 10:28:56.68')
+
+2024/06/17 10:36:04 F:/go_work/src/game-task/queue/role.go:73
+[1.431ms] [rows:1] SELECT * FROM `roles` WHERE gameId = 1501 AND serverId = '1002' AND roleId = '10012001445477' ORDER BY `roles`.`id` LIMIT 1
+
+2024/06/17 10:36:04 F:/go_work/src/game-task/queue/role.go:88
+[0.000ms] [rows:1] UPDATE `roles` SET `online`=1,`updated_at`='2024-06-17 10:36:04.587' WHERE `id` = 6
+
+2024/06/17 10:36:04 F:/go_work/src/game-task/queue/role.go:97
+[0.531ms] [rows:1] SELECT * FROM `roles` WHERE gameId = 1501 AND userCode = 'aaaaaaaaaa' AND created_at < '2024-06-17 10:28:57' ORDER BY `roles`.`id` LIMIT 1
+
+2024/06/17 10:36:04 F:/go_work/src/game-task/queue/role.go:123
+[1.258ms] [rows:1] INSERT INTO `role_logins` (`userCode`,`agent`,`udid`,`gameId`,`roleId`,`roleName`,`serverId`,`loginServerId`,`serverName`,`type`,`time`,`regTime`,`logoutTime`,`roleLevel`,`ip`,`created_at`,`updated_at`) VALUES ('aaaaaaaaaa','150102_10086','z45cdf5adfew61324dadsg45648978adsf4564ads46',1501,'10012001445477','我的是大师傅1','1002',1,'2服','0',1718591764,1718591337,0,55,'','2024-06-17 10:36:04.587','2024-06-17 10:36:04.587')
+
+2024/06/17 11:41:17 F:/go_work/src/game-task/queue/order.go:65 Error 1054 (42S22): Unknown column 'orderId' in 'where clause'
+[1.621ms] [rows:0] SELECT * FROM `devices` WHERE orderId = '2024125444654' ORDER BY `devices`.`id` LIMIT 1
+
+2024/06/17 11:41:58 F:/go_work/src/game-task/queue/order.go:65 record not found
+[2.484ms] [rows:0] SELECT * FROM `orders` WHERE orderId = '2024125444654' ORDER BY `orders`.`id` LIMIT 1
+
+2024/06/17 11:41:58 F:/go_work/src/game-task/queue/order.go:72
+[0.751ms] [rows:1] INSERT INTO `orders` (`orderId`,`billNo`,`userCode`,`userName`,`agent`,`channelId`,`gameId`,`amount`,`goodsCode`,`giftId`,`roleId`,`roleName`,`serverId`,`serverName`,`ip`,`level`,`orderType`,`udid`,`orderStatus`,`gameOrderStatus`,`createTime`,`type`,`payType`,`created_at`,`updated_at`) VALUES ('2024125444654','2024125444654_45456','adsfadsfdasf','','150102_102','1235',1501,'100','123','55','200112445646','我是的阿道夫','2001','2服','::1',66,1,'adsfasdfasdf4646d','1','1',1542156454,'1',1,'2024-06-17 11:41:58.013','2024-06-17 11:41:58.013')
+
+2024/06/17 12:01:48 F:/go_work/src/game-task/queue/order.go:73
+[2.368ms] [rows:16] SELECT `id` FROM `games` WHERE status = 1 AND percents = '0.1'
+
+2024/06/17 12:01:48 F:/go_work/src/game-task/queue/order.go:114
+[2.027ms] [rows:1] SELECT * FROM `orders` WHERE orderId = '2024125444654' ORDER BY `orders`.`id` LIMIT 1
+
+2024/06/17 12:02:20 F:/go_work/src/game-task/queue/order.go:114 record not found
+[0.504ms] [rows:0] SELECT * FROM `orders` WHERE orderId = '202412544465445' ORDER BY `orders`.`id` LIMIT 1
+
+2024/06/17 12:02:20 F:/go_work/src/game-task/queue/order.go:121
+[0.000ms] [rows:1] INSERT INTO `orders` (`orderId`,`billNo`,`userCode`,`userName`,`agent`,`channelId`,`gameId`,`amount`,`goodsCode`,`giftId`,`roleId`,`roleName`,`serverId`,`serverName`,`ip`,`level`,`orderType`,`udid`,`orderStatus`,`gameOrderStatus`,`createTime`,`type`,`payType`,`created_at`,`updated_at`) VALUES ('202412544465445','2024125444654_45456','adsfadsfdasf','','150102_102','1235',91,'1','123','55','200112445646','我是的阿道夫','2001','2服','::1',66,1,'adsfasdfasdf4646d','1','1',1542156454,'1',1,'2024-06-17 12:02:20.035','2024-06-17 12:02:20.035')
+
+2024/06/17 14:05:57 F:/go_work/src/game-task/queue/order.go:114
+[1.361ms] [rows:1] SELECT * FROM `orders` WHERE orderId = '202412544465445' ORDER BY `orders`.`id` LIMIT 1
+
+2024/06/17 14:30:47 F:/go_work/src/game-task/queue/order.go:114
+[0.747ms] [rows:1] SELECT * FROM `orders` WHERE orderId = '202412544465445' ORDER BY `orders`.`id` LIMIT 1
+
+2024/06/17 14:30:48 F:/go_work/src/game-task/queue/order.go:114
+[0.557ms] [rows:1] SELECT * FROM `orders` WHERE orderId = '202412544465445' ORDER BY `orders`.`id` LIMIT 1
+
+2024/06/17 14:30:49 F:/go_work/src/game-task/queue/order.go:114
+[0.516ms] [rows:1] SELECT * FROM `orders` WHERE orderId = '202412544465445' ORDER BY `orders`.`id` LIMIT 1
+
+2024/06/18 15:15:16 F:/go_work/src/game-task/bootstrap/db.go:45
+[error] failed to initialize database, got error dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
